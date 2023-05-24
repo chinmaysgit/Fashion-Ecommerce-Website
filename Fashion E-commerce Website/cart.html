@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FashionHeaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    
+
+</head>
+
+<body>
+    <div class="cart-container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt=".." width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" class="nav-img">
+                    <img src="images/shopping-cart.png" width="30px" height="30px">
+                </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </header>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                        <img src="https://prabhubhakti.in/wp-content/uploads/2023/02/Stylish-Shiva-With-Sheshnag-men-t-shirt.jpg" alt=".." alt="">
+                        <div>
+                            <p>Stylish white t-shirt</p>
+                            <small>&#8377;449</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                       </div> 
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377;449</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                        <img src="images/f6.jpg" alt=".." alt="">
+                        <div>
+                            <p>Dual Colour Jacket</p>
+                            <small>&#8377;859</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                       </div> 
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377;859</td>
+                </tr>
+                <tr>
+                    <td>
+                       <div class="cart-info">
+                        <img src="https://rukminim1.flixcart.com/image/832/832/l12h1u80/shoe/e/m/g/10-mh-6002-white-10-m-h-footwear-white-original-imagcpy7nkanbzhf.jpeg?q=70" alt=".." alt="">
+                        <div>
+                            <p>Leaf White Sneaker</p>
+                            <small>&#8377;699</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                       </div> 
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377;699</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>&#8377;2007</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>&#8377;100.35</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>&#8377;2107.35</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-------- Footer ---------->
+        <div class="footer">
+            <div class="f-container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios.</p>
+                        <div class="app-logo">
+                            <img src="images/app-store.png">
+                            <img src="images/play-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo_transparent.png" alt=".." width="180px">
+                        <p>Download App for Android and ios.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4" id="contact">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#169; 2023 www.FashionHeaven.com.All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+
+</html>    
